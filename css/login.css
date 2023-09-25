@@ -1,0 +1,350 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    font-family: 'Tajawal', sans-serif;
+}
+a {
+    text-decoration: none;
+}
+h1 , h2 , h3 , h4 , h5 , h6 , label , div{
+    color: white;
+}
+body{
+    position: relative;
+background-color: #34568B;
+overflow-x: hidden;
+}
+body .img {position: relative;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.img img {
+    width: 18vw;
+    height: 26vh;
+    box-shadow:0px 0px 20px 7px #1f3354;
+border-bottom-left-radius: 30px;
+border-bottom-right-radius: 30px;
+transform: translateY(-12px);
+margin-bottom: 100px;
+}
+@media (max-width:768px) {
+    .img img {
+        width: 45vw;
+    }
+}
+.formhold {
+    background-color: #2d4b7c;
+    padding: 20px;
+    width: 50vw;
+    height: 70vh;
+    border-radius: 30px;
+    box-shadow:0px 0px 20px 3px #1f3354;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+.formhold:hover {
+    transform: scale(1.03);
+    box-shadow:0px 0px 20px 7px #1f3354;
+}
+.formhold h1 {
+    transform: translateY(-50px);
+    color: white;
+    font-size: 58px;
+}
+.pn {
+    display: flex;
+        flex-direction: column;
+        text-align: start;
+    }
+    .pn label {
+        font-size: 30px;
+        color: white;
+    }
+    .pn input {
+    font-size: 30px;
+    width: 450px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    border:0;
+    box-shadow:0px 0px 20px 3px #1f3354;
+    border-radius: 8px;
+}
+    .pn input :focus {
+        border: 2px solid red;
+    }
+    .pass {
+        display: flex;
+        flex-direction: column;
+        text-align: start;
+    }
+    .pass label {
+        font-size: 30px;
+        margin-top: 10px;
+        color: white;
+    }
+    .pass input {
+        font-size: 30px;
+        width: 450px;
+        margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: none;
+    box-shadow:0px 0px 20px 3px #1f3354;
+    border-radius: 8px;
+}
+    .submit {
+        margin-top:18px ;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        background-color: #34568B;
+        border: 0;
+        border-radius: 10px;
+        box-shadow:0px 0px 20px 3px #1f3354;
+        color: white;
+    cursor: pointer;
+    font-size: 30px;
+    font-weight: 700;
+}
+.submit:hover {
+    background-color: white;
+    color: #1f3354;
+    transition: .1s linear;
+}
+    .fp{
+        font-size: 20px;
+        color: white;
+        transform: translateY(24px);
+    }
+    .fp a {
+        color: red;
+    }
+    .sp{
+        font-size: 20px;
+        color: white;
+        transform: translateY(40px);
+    }
+    .sp a {
+        color: red;
+    }
+    .parent {
+margin-top: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #231e42;
+        padding-top: 40px;
+        padding-bottom: 40px;
+        flex-direction: row;
+    }
+    .parent a {
+        color: #231e42;
+    }
+    .parent .phold h5 {
+        color: #231e42;
+        padding-top: 10px;
+        font-size: 20px;
+    }
+    .parent .phold {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        background-color: white;
+        border-radius: 10px;
+        height: 160px;
+        width: 670px;
+        text-align: center;
+    }
+    .parent .phold a div {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+        height: 150px;
+        padding-top: 20px;
+        padding-bottom: 40px;
+        text-align: center;
+    }
+    .parent .phold a div:not(.lastchild){
+        border-left: 2px solid #231e42;
+        padding-left:15px;
+    }
+    .phold a:not(:last-child) {
+        margin-left: 20px;
+    }
+    @media (max-width:1032px) {
+        .formhold{
+            width: 50vw;
+        }
+        .formhold h1 {
+            transform: translateY(-50px);
+            color: white;
+            font-size: 40px;
+        }
+        .pn {
+            display: flex;
+                flex-direction: column;
+                text-align: start;
+            }
+            .pn label {
+                font-size: 25px;
+                color: white;
+            }
+            .pn input {
+            font-size: 30px;
+            width: 300px;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 10px;
+            border:0;
+            box-shadow:0px 0px 20px 3px #1f3354;
+            border-radius: 8px;
+        }
+            .pass {
+                display: flex;
+                flex-direction: column;
+                text-align: start;
+            }
+            .pass label {
+                font-size: 25px;
+                margin-top: 10px;
+                color: white;
+            }
+            .pass input {
+                font-size: 30px;
+                width: 300px;
+                margin-left: auto;
+            margin-right: auto;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            border: 0;
+            box-shadow:0px 0px 20px 3px #1f3354;
+            border-radius: 8px;
+        }
+            .submit {
+                margin-top:20px ;
+                padding-left: 50px;
+                padding-right: 50px;
+                padding-top: 10px;
+                padding-bottom: 10px;
+                background-color: #34568B;
+                border: 0;
+                border-radius: 10px;
+                box-shadow:0px 0px 20px 3px #1f3354;
+                color: white;
+            cursor: pointer;
+            font-size:20px;
+            font-weight: 700;
+        }
+        .parent .phold {
+            width: 280px;
+        }
+        .parent .phold h5 {
+            font-size: 15px;
+        }
+        .parent .phold a div:not(.lastchild) {
+            padding-left: 0;
+        }
+        .phold a:not(:last-child) {
+            margin-left: 0;
+        }
+    }
+    @media (max-width:768px) {
+        .formhold{
+            width: 80vw;
+            height: 48vh;
+                }
+        .formhold h1 {
+            transform: translateY(-10px);
+            color: white;
+            font-size: 27px;
+        }
+        .pn {
+            display: flex;
+                flex-direction: column;
+                text-align: start;
+            }
+            .pn label {
+                font-size: 21px;
+                color: white;
+            }
+            .pn input {
+            font-size: 24px;
+            width: 200px;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 10px;
+            border:0;
+            box-shadow:0px 0px 20px 3px #1f3354;
+            border-radius: 8px;
+        }
+            .pass {
+                display: flex;
+                flex-direction: column;
+                text-align: start;
+            }
+            .pass label {
+                font-size: 21px;
+                margin-top: 10px;
+                color: white;
+            }
+            .pass input {
+                font-size: 24px;
+                width: 200px;
+                margin-left: auto;
+            margin-right: auto;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            border: 0;
+            box-shadow:0px 0px 20px 3px #1f3354;
+            border-radius: 8px;
+        }
+            .submit {
+                margin-top:20px ;
+                padding-left: 20px;
+                padding-right: 20px;
+                padding-top: 10px;
+                padding-bottom: 10px;
+                background-color: #34568B;
+                border: 0;
+                border-radius: 10px;
+                box-shadow:0px 0px 20px 3px #1f3354;
+                color: white;
+            cursor: pointer;
+            font-size:20px;
+            font-weight: 700;
+        }
+        .fp{
+            font-size: 13px;
+            color: white;
+            transform: translateY(12px);
+        }
+        .fp a {
+            color: red;
+        }
+        .sp{
+            font-size: 14px;
+            color: white;
+            transform: translateY(28px);
+        }
+        .sp a {
+            color: red;
+        }
+        .parent .phold {
+            width: 280px;
+        }
+        .parent .phold h5 {
+            font-size: 15px;
+        }
+    }

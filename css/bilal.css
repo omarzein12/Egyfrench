@@ -16,7 +16,7 @@ body{
    height: 100%;
    width: 100%;
 position: relative;
-background-image: linear-gradient(to left, #ff6f61, white, #34568B );
+background-image: linear-gradient(to left, red, white, blue );
 
 }
 
@@ -71,7 +71,6 @@ display: flex;
 justify-content: center;
 }
 nav .navc .buttonhold ul a  {
-
     padding: 7px;
     background: linear-gradient(white, white) padding-box,
     linear-gradient(to left, #ff6f61,white,#34568B) border-box;
@@ -81,7 +80,7 @@ width: fit-content;
 margin: 10px;
 transition: .2s linear;
 }
-nav .navc .buttonhold ul  :hover  {
+nav .navc .buttonhold ul a:hover  {
 filter: saturate(5);
 transform: scale(1.05);
 filter: brightness(.9);
@@ -140,7 +139,7 @@ svg {
 }
 .container2{
     position: relative;
-    background-image: linear-gradient(to left , #ff6f61 , white , #34568B);
+    background-image: linear-gradient(to left , red , white , blue);
 }
 .grades{
     position: relative;
@@ -216,7 +215,7 @@ bottom: 50px;
 }
 .container3 svg {
     transform: rotateX(180deg);
-    background-image: linear-gradient(to left, #ff6f61, white, #34568B );
+    background-image: linear-gradient(to left, red, white, blue );
     position: relative;
 
 }
@@ -267,50 +266,49 @@ padding: 0px 10px;
 }
 .container4{
     height: 400px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #231e42;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #231e42;
+        padding-top: 40px;
+        padding-bottom: 40px;
+        flex-direction: row;
 }
 .container4 .p1{
-height: 400px;
     display: flex;
     justify-content: center;
     align-items: center;
-
+    flex-direction: row;
+    background-color: white;
+    border-radius: 10px;
+    height: 160px;
+    width: 670px;
+    text-align: center;
 }
 .c34{
     background-color: #34568B;
 }
 .container4 .p1 div {
     display: flex;
-    justify-content: center;
+    justify-content:center;
     align-items: center;
     flex-direction: column;
-    background-color: white;
-
-    border-radius: 10px;
-    margin: 15px;
-    height: 160px;
-    width: 160px;
+    height: 150px;
+    padding-top: 20px;
+    padding-bottom: 40px;
     text-align: center;
-}
-.container4 .p1 a div hr {
-    width: 60px; 
-   font-weight: 900;
-   color: black;
-   font-size: 40px;
-   transform: translateY(-5px);
-}
-.container4 .p1 a div svg {
-  transform: translateY(-10px);
 }
 .container4 .p1 a div h5{
     color: #231e42;
+    padding-top: 10px;
+    font-size: 20px;
 }
-.container4 .p1 a :hover {
-
-    filter: brightness(1.2);
+.container4 .p1 a div:not(.lastchild){
+    border-left: 2px solid #231e42;
+    padding-left:15px;
+}
+.p1 a:not(:last-child) {
+    margin-left: 20px;
 }
 @media (max-width:1023px) {
     .bc {
@@ -379,6 +377,9 @@ font-size: 25px;
         }
         .container3{
             height: 800px;
+        }
+        .p1 h5 {
+            font-size: 15px;
         }
     }
 @media(max-width: 767px) {
@@ -525,24 +526,12 @@ margin-right: 4px;
    position: relative;
    text-shadow: 1px 1px 10px rgb(154, 154, 160);
    width: 100%;
-
 }
-.p1 a  {
-    width: 70px;
-    height: 100px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.container4 .p1 a div:not(.lastchild) {
+    padding-left: 0;
 }
-.p1{
-    width: 90px;
-}
-.container4 .p1  div {
-    height: 130px;
-    width: 100px;
-}
-.container4 .p1 a div hr {
-    width: 15px;
+.p1 a:not(:last-child) {
+    margin-left: 0;
 }
 }
 
